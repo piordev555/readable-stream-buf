@@ -1,0 +1,34 @@
+{
+  "name": "readable-stream-buffer-stream",
+  "version": "1.0.0",
+  "description": "A readable stream that emits buffers containing bytes up to a certain length",
+  "main": "index.js",
+  "browser": {
+    "stream": "readable-stream"
+  },
+  "scripts": {
+    "test": "nyc --check-coverage --lines 100 --reporter html --reporter lcov ava",
+    "lint": "standard",
+    "coveralls": "npm test && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "Alex Potsides <alex@achingbrain.net>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achingbrain/readable-stream-buffer-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achingbrain/readable-stream-buffer-stream/issues"
+  },
+  "homepage": "https://github.com/achingbrain/readable-stream-buffer-stream#readme",
+  "devDependencies": {
+    "ava": "^3.2.0",
+    "coveralls": "^3.0.2",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "randombytes": "^2.1.0",
+    "readable-stream": "^3.5.0"
+  }
+}
